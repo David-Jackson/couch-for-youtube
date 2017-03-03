@@ -20,6 +20,13 @@ function _Couch() {
         }
         console.log(this.videos);
     };
+    this.createFAB = function() {
+        var fabHTML = '<div class="fixed-action-btn" style="bottom: 24px; right: 24px; position: fixed; padding-top: 15px; margin-bottom: 0; z-index: 998;">' +
+            '<a class="btn-floating btn-large blue-grey" href="new/">' +
+            '<i class="material-icons">event_seat</i>' +
+            '</a>' +
+            '</div>';
+    }
 }
 
 couch = new _Couch()
